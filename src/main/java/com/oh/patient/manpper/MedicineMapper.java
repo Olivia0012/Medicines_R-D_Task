@@ -15,7 +15,7 @@ public interface MedicineMapper {
 	 * @param period
 	 * @return
 	 */
-	@Select("SELECT * FROM medicinerecords WHERE pid = #{patientId} and (takentime BETWEEN SYMMETRIC #{pastWeek} AND #{date}) ")
+	@Select("SELECT * FROM medicinerecords WHERE pid = #{patientId} and (takentime BETWEEN SYMMETRIC #{pastWeek} AND #{date})")
 	public List<MedicineRecord> findByPatientIdandDate(String patientId, Date date, Date pastWeek);
 
 	@Insert("insert into medicinerecords(mrid,medicine,amount,pid,takentime) values (#{id},#{medicine},#{amount},#{pid},#{takenTime})")
