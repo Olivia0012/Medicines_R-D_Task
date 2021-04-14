@@ -20,7 +20,7 @@ public interface MedicineMapper {
 
 	@Insert("insert into medicinerecords(mrid,medicine,amount,pid,takentime) values (#{id},#{medicine},#{amount},#{pid},#{takenTime})")
 	public Boolean insert(MedicineRecord obj);
-s
+
 	public Boolean update(MedicineRecord obj);
 
 	@Delete(value = { "" })
