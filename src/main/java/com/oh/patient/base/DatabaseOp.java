@@ -10,9 +10,9 @@ import java.util.List;
 public class DatabaseOp {
 	
 	private static final String driver = "org.postgresql.Driver";
-	private static final String username = "postgres";
-	private static final String password = "123";
-	private static final String url = "jdbc:postgresql://127.0.0.1:5432/testdb";
+	private static final String username = "visopwrfwurtch";
+	private static final String password = "e96ec9ac2a925dc0d496ff907db4107bdc77a2392a23eeae9829a062e8ae139c";
+	private static final String url = "jdbc:postgresql://ec2-54-205-183-19.compute-1.amazonaws.com:5432/dftr2330sk9gq8";
 	
 	/*	  private static final String driver = "org.postgresql.Driver";
 	  private static final String username = "postgres"; 

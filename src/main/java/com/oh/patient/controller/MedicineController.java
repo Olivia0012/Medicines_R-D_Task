@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.oh.patient.domain.MedicineRecord;
+import com.oh.patient.domain.Patient;
+import com.oh.patient.manpper.PatientMapper;
 import com.oh.patient.service.MedicineService;
 
 /**
@@ -43,6 +45,7 @@ public class MedicineController {
 	@RequestMapping(method = RequestMethod.POST)
     public boolean addMedicineRecord(@RequestBody MedicineRecord medicineRecord) {
 		medicineRecord.AutoFill();
+		
 		return medicineService.addMedicienRecord(medicineRecord);
     }
 }

@@ -13,11 +13,11 @@ public class MedicineRecord extends BaseEntity{
 	private float amount;
 	
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-	private LocalDateTime takenTime;
+	private Date takenTime;
 	
 	private String pid;
 	
-	public MedicineRecord(String id, String medicine, float amount, LocalDateTime takenTime,
+	public MedicineRecord(String id, String medicine, float amount, Date takenTime,
 			String pid) throws ParseException {
 		super(id);
 		this.medicine = medicine;
@@ -47,12 +47,12 @@ public class MedicineRecord extends BaseEntity{
 	}
 
 
-	public LocalDateTime getTakenTime() {
+	public Date getTakenTime() {
 		return takenTime;
 	}
 
 
-	public void setTakenTime(LocalDateTime takenTime) throws ParseException {
+	public void setTakenTime(Date takenTime) throws ParseException {
 		this.takenTime = takenTime;
 	}
 

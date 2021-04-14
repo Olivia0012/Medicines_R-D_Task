@@ -8,7 +8,7 @@ import com.oh.patient.domain.Patient;
 @Mapper
 public interface PatientMapper {
 	
-	@Insert("insert into patient(pid,name) values (#{pid},#{medicine},#{name})")
+	@Insert("insert into patient(pid,name) values (#{id},#{name})")
 	public String insert(Patient obj);
 
 }
