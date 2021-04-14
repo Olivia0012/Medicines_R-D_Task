@@ -113,8 +113,8 @@ public class DatabaseOp {
                  + ")";
 	         
 	         // Create medicine_records table
-	         String sql6 = " DROP TABLE IF EXISTS medicine_records;"
-	         		+ "CREATE TABLE medicine_records " +
+	         String sql6 = " DROP TABLE IF EXISTS medicinerecords;"
+	         		+ "CREATE TABLE medicinerecords " +
                  "(mrid  VARCHAR PRIMARY KEY     NOT NULL," +
                  " medicine        VARCHAR, " +
                  " amount        REAL, " +
