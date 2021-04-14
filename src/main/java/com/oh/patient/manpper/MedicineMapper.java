@@ -1,10 +1,11 @@
 package com.oh.patient.manpper;
 
-import com.oh.patient.domain.MedicineRecord;
 import java.util.Date;
 import java.util.List;
+import com.oh.patient.domain.MedicineRecord;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 @Mapper
